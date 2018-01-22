@@ -12,7 +12,7 @@ http = urllib3.PoolManager()
 LOT = 0.001
 
 def order(side, size):
-    print(api.sendchildorder(product_code="FX_BTC_JPY", child_oider_type="MARKET",
+    print(api.sendchildorder(product_code="FX_BTC_JPY", child_order_type="MARKET",
           minute_to_expire=60, side=side, size=size))
 
 while True:
